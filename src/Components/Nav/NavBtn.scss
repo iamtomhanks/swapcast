@@ -1,0 +1,7 @@
+@import 'Styles/index';
+
+.nav-btn-component {
+  @include button;
+  padding: .5rem 1rem;
+  font-weight: bold;
+}

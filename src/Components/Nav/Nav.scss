@@ -1,0 +1,19 @@
+@import 'Styles/index';
+
+.nav-component {
+  height: 4rem;
+  background: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+
+  .user-btns {
+    display: flex;
+    align-items: center;
+    margin-right: 10vh;
+  }
+}

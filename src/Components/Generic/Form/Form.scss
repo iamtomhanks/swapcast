@@ -1,0 +1,15 @@
+@import 'Styles/index';
+
+.form-component {
+  display: flex;
+  flex-direction: column;
+
+  .submit-btn {
+    margin-top: 1em;
+    @include button;
+    background: $grey;
+    font-weight: bold;
+    padding: .5em 0;
+    border-radius: 5px;
+  }
+}

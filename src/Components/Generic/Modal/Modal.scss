@@ -1,0 +1,74 @@
+@import 'Styles/index';
+
+.modal-component {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: rgba(51,51,51,.9);
+  &.no-overlay {
+    background: none;
+  }
+  z-index: 1000;
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    @media(max-width: 768px) {
+      width: 96%;
+    }
+    border-radius: .5rem;
+    background: #fff;
+    @include top-down-shadow;
+
+    .modal-body {
+      max-height: 90vh;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include scroll-bar;
+    }
+
+  }
+
+  .modal-header {
+    color: $grey;
+    text-align: center;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+    padding: 0rem 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .modal-x{
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    color: $grey;
+    font-weight: normal;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .full-screen {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    border-radius: 0;
+    position: absolute;
+    transform: none;
+    .modal-header {
+      border-radius: 0;
+    }
+  }
+}

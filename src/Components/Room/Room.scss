@@ -1,0 +1,27 @@
+@import 'Styles/index';
+
+.room-component {
+  .meeting-info-container {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+    padding: 0 10vw;
+
+    .video-stream-component {
+      display: inline-flex;
+      width: 200px;
+    }
+  }
+  .participants-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 5vw;
+    justify-content: space-evenly;
+
+    .video-stream-component {
+      width: 400px;
+    }
+  }
+}

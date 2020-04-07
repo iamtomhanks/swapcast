@@ -1,0 +1,28 @@
+@import 'Styles/index';
+
+.lobby-component {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .video-stream-component {
+      width: 400px;
+      height: 300px;
+      display: block;
+    }
+
+    .join-room-btn {
+      background: $blue;
+      margin-top: 2rem;
+      border-radius: 50px;
+      border: none;
+      font-weight: bold;
+      text-align: center;
+      padding: 1rem 2rem;
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+}
