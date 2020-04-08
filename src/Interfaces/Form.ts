@@ -6,7 +6,7 @@ export enum FormFieldType {
 
 export interface FormField {
   id: string;
-  value: string|number;
+  value: FormFieldVal;
   type: FormFieldType;
   label: string;
   maxChars?: number;
@@ -14,5 +14,11 @@ export interface FormField {
 
 export interface OnChange {
   id: string;
-  value: string|number;
+  value: FormFieldVal;
 }
+
+export interface FormSubmitVals {
+  [key: string]: FormFieldVal;
+}
+
+export type FormFieldVal = string|number;

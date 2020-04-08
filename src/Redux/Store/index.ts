@@ -1,12 +1,11 @@
 // Modules
 import { applyMiddleware, createStore } from 'redux';
-import thunk from 'redux-thunk';
+import reduxLogger from 'redux-logger';
+import reduxThunk from 'redux-thunk';
 
 // Reducers
 import reducer from '../Reducers';
 
-export default createStore(reducer, (() => {
-  return applyMiddleware(thunk);
-})());
+export default createStore(reducer, applyMiddleware(reduxLogger, reduxThunk));
 
 

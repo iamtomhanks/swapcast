@@ -1,0 +1,12 @@
+@import 'Styles/index';
+
+.loader-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+  
+  img {
+    width: 50px;
+  }
+}

@@ -2,10 +2,12 @@
 import { RoomState } from 'Redux/Reducers/room';
 import { UserState } from 'Redux/Reducers/user';
 import { RequestsState } from 'Redux/Reducers/requests';
+import { ServerError } from 'Interfaces/Requests';
 
 export interface Action {
   type: string;
-  payload: unknown;
+  payload: {[key: string]: unknown};
+  error?: ServerError|null;
 }
 
 // Store
